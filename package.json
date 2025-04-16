@@ -27,6 +27,7 @@
     "eslint": "latest",
     "eslint-config-next": "latest",
     "jest": "^29.7.0",
+    "postcss-import": "^16.1.0",
     "typescript": "^5.8.3"
   }
 }

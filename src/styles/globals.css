@@ -3,27 +3,39 @@
 @tailwind utilities;
 
 body {
-  @apply bg-white text-black transition-colors duration-300;
+  @apply bg-gray-900 text-slate-300 antialiased transition-colors duration-300 font-sans;
 }
 
 .dark body {
-  @apply bg-gray-900 text-white;
+  @apply bg-gray-900 text-slate-300;
 }
 
 section {
-  @apply py-20;
 }
 
+/* Typography */
 h1,
 h2,
 h3 {
-  @apply font-bold;
+  @apply font-bold text-slate-200;
 }
 
 a {
-  @apply text-blue-500 hover:text-blue-700;
+  @apply text-teal-300 hover:text-teal-400 focus-visible:text-teal-400 transition-colors duration-300;
 }
 
+/* Footer styles */
 footer {
-  @apply text-center py-4;
+  @apply text-center py-4 text-slate-500;
+}
+
+button {
+  @apply hover:bg-gray-700 hover:text-teal-300 transition-colors duration-300;
+}
+
+.inter-medium {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }

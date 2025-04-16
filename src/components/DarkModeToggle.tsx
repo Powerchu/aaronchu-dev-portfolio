@@ -10,7 +10,10 @@ const DarkModeToggle = () => {
   const { theme, toggleTheme } = themeContext;
 
   return (
-    <button onClick={toggleTheme} className="p-2 rounded focus:outline-none">
+    <button
+      onClick={toggleTheme}
+      className="p-2 rounded bg-gray-800 text-slate-300 hover:bg-gray-700 hover:text-teal-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-300 transition-colors duration-300"
+    >
       {theme === darkTheme ? "Switch to Light Mode" : "Switch to Dark Mode"}
     </button>
   );

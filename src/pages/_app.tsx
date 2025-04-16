@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import "../styles/tailwind.css";
 import { useEffect, useState } from "react";
 import { ThemeProvider } from "../utils/theme/ThemeProvider";
 

@@ -1,30 +1,26 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import NavBar from "./NavBar/NavBar";
+import Link from "next/link";
 
 const Header: React.FC = () => {
-    return (
-        <header className="fixed top-0 left-0 w-full bg-white dark:bg-gray-800 shadow-md">
-            <div className="container mx-auto flex justify-between items-center p-4">
-                <h1 className="text-xl font-bold text-gray-900 dark:text-white">My Portfolio</h1>
-                <nav>
-                    <ul className="flex space-x-4">
-                        <li>
-                            <Link href="#about" className="text-gray-900 dark:text-white hover:underline">About</Link>
-                        </li>
-                        <li>
-                            <Link href="#projects" className="text-gray-900 dark:text-white hover:underline">Projects</Link>
-                        </li>
-                        <li>
-                            <Link href="#resume" className="text-gray-900 dark:text-white hover:underline">Resume</Link>
-                        </li>
-                        <li>
-                            <Link href="#contact" className="text-gray-900 dark:text-white hover:underline">Contact</Link>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-    );
+  return (
+    <div className="flex flex-col items-start space-y-20 pr-12 sm:pr-16 md:pr-20 lg:pr-32 xl:pr-42">
+      {/* Personal Info */}
+      <div className="space-y-3">
+        <h1 className="text-6xl font-bold text-white">Aaron Chu</h1>
+        <h2 className="text-2xl font-medium text-teal-300">
+          Full Stack Engineer
+        </h2>
+        <p className="text-slate-300">
+          I build accessible, pixel-perfect digital experiences for the web.
+        </p>
+      </div>
+      {/* Navigation Bar */}
+      <div data-id="navBar">
+        <NavBar />
+      </div>
+    </div>
+  );
 };
 
 export default Header;
